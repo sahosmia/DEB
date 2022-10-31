@@ -51,21 +51,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 :root{
     --color-1 : #F42A41;
     --color-2 : #006A4E;
@@ -354,7 +339,7 @@ nav ul li:hover{
 
 
 
-.course_category, .mentor, .why_choose, .about_us, .populer_blog, .newsletter, .registaion_form_section, .registation_course{
+.course_category, .mentor, .why_choose, .about_us, .populer_blog, .newsletter, .registaion_form_section, .registation_course, .testimonial{
     padding: 10rem 0;
 }
 /* registation_course section css start  */
@@ -681,4 +666,41 @@ footer .footer_subtitle{
 }
 .footer_bottom ul li a:hover {
     color: var(--color-1);
+}
+
+
+/* ============================================ */
+
+.testimonial_image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+.testimonal_item {
+    background: var(--color-2);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 4px;
+}
+.testimonial_name {
+    color: #fff;
+    font: 600 24px var(--font-family-1);
+    padding-bottom: 5px;
+}
+.testimonial_content{}
+.testimonial_designation{
+    padding-bottom: 24px;
+    color: #fff;
+    font-family: var(--font-family-1);
+}
+.testimonial_description{
+    color: #fff;
+    font-family: var(--font-family-1);
+}
+
+.owl-carousel .owl-item img {
+    display: inline-block;
+    width: 100px;
 }
