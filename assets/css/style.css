@@ -102,11 +102,20 @@ img{
 }
 
 /* header Css Start  */
+header{
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        right: 0;
+    
+}
+
 .top_header{
     background: #FAFAFA;
 }
 header nav{
-    background: var(--color-2);
     line-height: 7rem;
 }
 
