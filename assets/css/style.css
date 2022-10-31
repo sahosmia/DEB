@@ -74,6 +74,9 @@ img{
 .primary_color{
     color: var(--color-1);
 }
+button.button{
+    border: none;
+}
 .button {
     background: var(--color-1);
     color: var(--color-white);
@@ -104,11 +107,11 @@ img{
 /* header Css Start  */
 header{
     
-        position: absolute;
+        /* position: absolute;
         top: 0;
         left: 0;
         z-index: 1;
-        right: 0;
+        right: 0; */
     
 }
 
@@ -117,6 +120,10 @@ header{
 }
 header nav{
     line-height: 7rem;
+    background: var(--color-2);
+}
+nav .logo img{
+    width: 100px;
 }
 
 nav ul li a{
@@ -166,10 +173,21 @@ nav ul li:hover{
 
 /* banner section start  */
 .banner{
-
     background: url(../img/banner/bd_flag.jpg) no-repeat center;
     background-size: cover;
-    padding: 200px 0;
+    padding: 20rem 0;
+    position: relative;
+    z-index: 1;
+}
+.banner::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0e0e0e75;
+    z-index: -1;
 }
 
 
@@ -193,7 +211,81 @@ nav ul li:hover{
 }
 
 /* banner section end  */
-.course_category, .mentor, .why_choose, .about_us, .populer_blog, .newsletter{
+
+/* page banner section start  */
+.page_banner{
+    background: url(../img/registaion/registaion_banner.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+}
+
+.page_banner::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0e0c0cc7;
+    z-index: -1;
+}
+
+.page_banner_content{
+    text-align: center;
+
+}
+
+.page_banner_content h2 {
+    color: var(--color-white);
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+
+.page_banner_content p {
+    color: #c5c5c5;
+    font-size: 15px;
+}
+/* page banner section end  */
+
+/* registion form setion css start  */
+.registaion_form{
+    
+}
+
+.registaion_form label{
+    font-size: 1.6rem;
+    padding-bottom: .5rem;
+    color: black;
+}
+
+.registaion_form input, .registaion_form select {
+    padding: 0.8rem 1rem;
+    font-size: 1.6rem;
+    /* border: none; */
+    /* border-bottom: 1px solid #ced4da; */
+    border-radius: .75rem;
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+
+
+.mandatory{
+    color: red;
+}
+
+.registaion_form input:focus{
+    /* border-color: var(--color-2);  
+    box-shadow:none; */
+}
+
+/* registion form setion css end  */
+
+
+
+.course_category, .mentor, .why_choose, .about_us, .populer_blog, .newsletter, .registaion_form_section{
     padding: 10rem 0;
 }
 
