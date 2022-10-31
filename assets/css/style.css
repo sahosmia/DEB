@@ -1,3 +1,71 @@
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 soild transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 2em solid var(--color-2);
+    border-radius: 5px;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader:before{
+    animation-delay: .5s;
+}
+.loader:before{
+    border: 2em solid var(--color-1);
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :root{
     --color-1 : #F42A41;
     --color-2 : #006A4E;
@@ -5,6 +73,7 @@
     --font-family-1: 'Poppins', sans-serif;
     --font-family-2: 'Source Serif Pro', serif;
 }
+
 
 *, *::after, *::before{
     padding: 0;
@@ -285,9 +354,38 @@ nav ul li:hover{
 
 
 
-.course_category, .mentor, .why_choose, .about_us, .populer_blog, .newsletter, .registaion_form_section{
+.course_category, .mentor, .why_choose, .about_us, .populer_blog, .newsletter, .registaion_form_section, .registation_course{
     padding: 10rem 0;
 }
+/* registation_course section css start  */
+.registation_course{
+    background: url(../img/banner/registation_course.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: var(--color-white);
+}
+
+.registation_course::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #002004d9;
+    z-index: -1;
+}
+
+.registation_course h4 {
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.registation_course p {
+    font-size: 16px;
+}
+/* registation_course section css end  */
 
 /* About us section start  */
 .about_us  h5 {
@@ -406,7 +504,8 @@ nav ul li:hover{
 
 .newsletter p {
     color: #363636;
-font-size: 18px;}
+    font-size: 18px;
+}
 
 .newsletter input {
     width: 356px;
