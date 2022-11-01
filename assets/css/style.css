@@ -704,3 +704,19 @@ footer .footer_subtitle{
     display: inline-block;
     width: 100px;
 }
+
+.testimonial .owl-next{
+    position: absolute;
+    top: 160px;
+    right: -35px;
+}
+.testimonial .owl-prev {
+    position: absolute;
+    top: 160px;
+    left: -30px;
+}
+.testimonial .owl-prev i, .testimonial .owl-next i {
+    font-size: 20px;
+    padding: 6px 6px;
+    color: #006a4e;
+}
