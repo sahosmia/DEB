@@ -10,6 +10,7 @@
 - Home
 - Notice 
 - Gallery 
+- Careear Hub
 - Contact Us
 - Registation 
 - Registation Details
