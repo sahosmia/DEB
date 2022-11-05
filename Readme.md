@@ -4,6 +4,8 @@
 - Header 
 - Banner
 - Footer
+- Testimonials
+- Bottom to top 
 
 
 ## Page
