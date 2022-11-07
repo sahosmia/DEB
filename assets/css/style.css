@@ -182,6 +182,16 @@ nav ul li a {
   background-size: cover;
 }
 
+.registation_form_page{
+    background: url(../img/registaion/registaion_banner.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.registation_details_page{
+    background: url(../img/registaion/bangladesh6.jpg) no-repeat center;
+    background-size: cover;
+}
+
 .page_banner::before {
   position: absolute;
   content: "";
@@ -241,13 +251,18 @@ nav ul li a {
 
 /*================== registion form setion css end  ===================*/
 
-/*============= registation_course section css start  ==============*/
-.registation_course {
-  background: url(../img/banner/registation_course.jpg) no-repeat center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-  color: var(--color-white);
+
+
+.course_category, .mentor, .why_choose, .about_us, .populer_blog, .newsletter, .registaion_form_section, .registation_course, .testimonial, .registaion_details_section,.gallary{
+    padding: 10rem 0;
+}
+/* registation_course section css start  */
+.registation_course{
+    background: url(../img/banner/registation_course.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: var(--color-white);
 }
 
 .registation_course::before {
@@ -527,40 +542,150 @@ nav ul li a {
 }
 /* Mentor Css End  */
 
+
+
 /* Testimonial Css STart  */
-.testimonial_image img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 24px;
+.testimonial_image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 24px;
 }
 
 .testimonal_item {
-  background: var(--color-2);
-  text-align: center;
-  padding: 40px 20px;
-  border-radius: 4px;
+    background: var(--color-2);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 4px;
 }
 .testimonial_name {
-  color: #fff;
-  font: 600 24px var(--font-family-1);
-  padding-bottom: 5px;
+    color: #fff;
+    font: 600 24px var(--font-family-1);
+    padding-bottom: 5px;
 }
-.testimonial_designation {
-  padding-bottom: 24px;
-  color: #fff;
-  font-family: var(--font-family-1);
-  font-size: 14px;
+.testimonial_designation{
+    padding-bottom: 24px;
+    color: #fff;
+    font-family: var(--font-family-1);
 }
-.testimonial_description {
-  color: #fff;
-  font-family: var(--font-family-1);
+.testimonial_description{
+    color: #fff;
+    font-family: var(--font-family-1);
 }
 
 .owl-carousel .owl-item img {
-  display: inline-block;
-  width: 100px;
+    display: inline-block;
+    width: 100px;
 }
+
+.testimonial .owl-next{
+    position: absolute;
+    top: 160px;
+    right: -35px;
+}
+.testimonial .owl-prev {
+    position: absolute;
+    top: 160px;
+    left: -30px;
+}
+.testimonial .owl-prev i, .testimonial .owl-next i {
+    font-size: 20px;
+    padding: 6px 6px;
+    color: var(--color-1);
+}
+
+/* testimonial css  End  */
+
+/* footer css start  */
+
+footer{
+    background: var(--color-2);
+    color: #fff;
+    
+}
+
+footer .footer_subtitle{
+    padding: 2rem 0;
+}
+
+
+.footer .main_footer {
+    padding: 5rem 0;
+}
+
+.main_footer ul{
+    display: block;
+}
+.main_footer ul li {
+    line-height: 2.4rem;
+    padding-bottom: 1.6rem;
+}
+
+.main_footer ul li a {
+    color: #cdcdcd;
+    font-size: 1.4rem;
+}
+.main_footer ul li a:hover {
+    color: var(--color-1);
+}
+
+
+.footer_bottom {
+    border-top: 1px solid var(--color-white);
+    padding: 2rem 0;
+    color: #cdcdcd;
+    font-size: 1.4rem;
+}
+.footer_bottom ul li {
+   padding: 0 1rem;
+}
+.footer_bottom ul li a {
+    font-size: 1.4rem;
+    color: #cdcdcd;
+}
+.footer_bottom ul li a:hover {
+    color: var(--color-1);
+}
+
+
+/* ============================================ */
+
+#back_to_top_btn {
+    display: inline-block;
+    background-color: #f42a41;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#back_to_top_btn::after {
+    content: "\f062";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.6em;
+    line-height: 40px;
+    color: #fff;
+}
+  #back_to_top_btn:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #back_to_top_btn:active {
+    background-color: #555;
+  }
+  #back_to_top_btn.show {
+    opacity: 1;
+    visibility: visible;
+  }
 
 .testimonial .owl-next {
   position: absolute;
