@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>ODDO - Login and Register Form HTML5 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- External CSS libraries -->
+    <!-- Bootstrap Css Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="assets/css/login4.css">
+
+</head>
+
+<body id="top">
+
+    <div class="login_page">
+
+        <div class="row">
+            <div class="form_side col-md-6">
+                <div class="logo">
+                    <img src="./assets/img/logo/DEB-Grean-Logo.png" alt="">
+                </div>
+
+                <h2>Sign In</h2>
+                <form action="#">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="row">
+
+                        <div class="form-check mb-3 col-md-6">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="forgot_link">Forget Password?</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+
+                </form>
+                <span class="spanOr">Or Login With</span>
+                <div class="social_link_item">
+                    <a href="#" class="social_link facebook_color"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social_link google_color"><i class="fa-brands fa-google"></i></a>
+                </div>
+
+                <p class="register_link">Not register yet? <a href="#" class="color_primary">Create an account</a>
+                </p>
+
+
+            </div>
+            <div class="content_side col-md-6">
+                <h2 class="welcome">Welcome to Deb</h2>
+                <div class="achive">
+                    <div class="login_about">
+                        <div class="login_about_content">
+                            <h2>About Us</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eveniet porro adipisci
+                                itaque perferendis, dolorem asperiores suscipit omnis magni dignissimos ex quo quasi
+                                voluptatum nesciunt recusandae molestiae voluptatem perspiciatis odit.</p>
+                        </div>
+                        <div class="login_about_video d-flex justify-content-center">
+                            <div class="video_box">
+                                <div class="play_btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achive_item">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h2>What do you learn?</h2>
+                            <ul>
+                                <li><i class="fa-sharp fa-solid fa-arrow-right"></i>How can speak in english</li>
+                                <li><i class="fa-sharp fa-solid fa-arrow-right"></i>Convertion with other pepole
+                                </li>
+                                <li><i class="fa-sharp fa-solid fa-arrow-right"></i>Solve your main problem</li>
+                                <li><i class="fa-sharp fa-solid fa-arrow-right"></i>You get help for you career</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <h2>What do you learn?</h2>
+                            <ul>
+                                <li><i class="fa-sharp fa-solid fa-arrow-right"></i>How can speak in english</li>
+                                <li><i class="fa-sharp fa-solid fa-arrow-right"></i>Convertion with other pepole
+                                </li>
+                                <li><i class="fa-sharp fa-solid fa-arrow-right"></i>Solve your main problem</li>
+                                <li><i class="fa-sharp fa-solid fa-arrow-right"></i>You get help for you career</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- External JS libraries -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <script>
+        let video_box = document.getElementsByClassName("video_box");
+        let play_btn = document.getElementsByClassName("play_btn");
+        let video_link =
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/qZZm5rej9Zw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
+        video_box[0].addEventListener("click", function() {
+            video_box[0].innerHTML = video_link;
+        });
+    </script>
+
+    <!-- Custom JS Script -->
+</body>
+
+</html>
