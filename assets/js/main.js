@@ -45,3 +45,22 @@ btn.on('click', function(e) {
 e.preventDefault();
 $('html, body').animate({scrollTop:0}, '300');
 });
+
+
+
+// Modal 
+let closeBtn = document.querySelector(".close");
+let modalBox = document.querySelector(".modal_box");
+
+closeBtn.addEventListener("click", function(){
+    modalBox.style.display = "none";
+});
+
+window.addEventListener('load', function(){
+    setTimeout(
+        function(){
+            modalBox.style.display = "block";
+        }, 
+        3000
+    )
+});
