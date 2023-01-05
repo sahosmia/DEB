@@ -133,69 +133,195 @@
                     <div class="col-md-6 m-auto">
                         <div class="page_banner_content">
                             <h2>Profile Page</h2>
-                            <p>
-                                Ex asperiores eos voluptas, corrupti eaque numquam doloremque
-                                animi laborum consequatur nobis, temporibus molestias, nisi
-                                error sint. Quod, incidunt? Ut, ad facilis.
-                            </p>
+                            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                                aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="./profile.html">Profile</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Edit</li>
+                                </ol>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About US Section Start -->
+
         <section class="profile_page">
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="profile_image_card" data-aos="fade-up-right" data-aos-duration="1000">
-                            <div class="profile_image_card_top">
-                                <img src="./assets/img/mentor/mentor-1.png" alt="">
-                                <h6>Kazi Nozrul Islam</h6>
-                            </div>
-                            <div class="profile_image_card_bottom">
-                                <ul>
-                                    <li><span>Role : </span>Level-01</li>
-                                    <li><span>Batch : </span>B2</li>
-                                    <li><span>Join Date : </span>20 Nov, 2022</li>
-                                </ul>
-                            </div>
 
-                        </div>
-                    </div>
-
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <div class="profile_information_card" data-aos="fade-up-left" data-aos-duration="1000">
+
+
                             <h5 class="sub_title">Genarel Information</h5>
-                            <ul>
-                                <li><span>Name : </span>Kazi Nozrul Islam</li>
-                                <li><span>Email : </span>kazinozrulislam@gmail.com</li>
-                                <li><span>Age : </span>20 years</li>
-                                <li><span>Gender : </span>Male</li>
-                                <li><span>Blood : </span>o-</li>
-                            </ul>
+                            <form action="#" method="post">
+
+
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Current Profile Image</label>
+                                    <img class="profile_image_update" src="./assets/img/mentor/mentor-2.png"
+                                        alt="">
+                                </div>
+
+                                <!-- Profile Image  -->
+                                <div class="mb-3">
+                                    <label for="exampleInputImage" class="form-label">Image</label>
+                                    <input type="file" class="form-control" id="exampleInputImage">
+                                </div>
+
+                                <!-- Name  -->
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Name</label>
+                                    <input value="Sahos Mia" name="name" type="text" class="form-control"
+                                        id="exampleInputName">
+                                </div>
+
+
+
+                                <!-- Gender -->
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Gender</label>
+                                    <select class="form-select" name="gender">
+                                        <option value="">Select</option>
+                                        <option value="1" selected>Male</option>
+                                        <option value="2">Female</option>
+                                    </select>
+                                </div>
+
+                                <!-- Birth Date  -->
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Birth Date</label>
+                                    <input value="2023-02-12" name="birth_date" type="date" class="form-control"
+                                        id="exampleInputName">
+                                </div>
+
+                                <!-- Blood Group -->
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Blood Group</label>
+                                    <select class="form-select" name="gender">
+                                        <option value="">Select</option>
+                                        <option value="1" selected>A +</option>
+                                        <option value="2">B +</option>
+                                        <option value="3">O +</option>
+                                        <option value="4">AB +</option>
+                                        <option value="5">A -</option>
+                                        <option value="6">B -</option>
+                                        <option value="7">O -</option>
+                                        <option value="8">AB -</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn text-white bg_green">Submit</button>
+                            </form>
+                        </div>
+                        <div class="profile_information_card" data-aos="fade-up-left" data-aos-duration="1000">
+
+                            <h5 class="sub_title">Contact Information</h5>
+                            <form action="#" method="post">
+
+                                 <!-- Address -->
+                                 <div class="mb-3">
+                                    <label for="exampleInputAddress" class="form-label">Address</label>
+                                    <input value="Farm Para, Chuadanga" name="address" type="text" class="form-control"
+                                        id="exampleInputAddress">
+                                </div>
+
+                                 <!-- Phone -->
+                                 <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Phone</label>
+                                    <input value="01952827301" name="phone" type="text" class="form-control"
+                                        id="exampleInputName">
+                                </div>
+
+                                <!-- Whatsapp Number -->
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Whatsapp Number</label>
+                                    <input value="01952827301" name="whatsapp_number" type="text"
+                                        class="form-control" id="exampleInputName">
+                                </div>
+
+                                <!-- Facebook -->
+                                <div class="mb-3">
+                                    <label for="exampleInputFacebook" class="form-label">Facebook</label>
+                                    <input value="hhtps//:www.facebook.com/sahosmia1" name="facebook" type="text"
+                                        class="form-control" id="exampleInputFacebook">
+                                </div>
+
+                                <!-- Linkedin -->
+                                <div class="mb-3">
+                                    <label for="exampleInputLinkedin" class="form-label">Linkedin</label>
+                                    <input value="hhtps//:www.facebook.com/sahosmia1" name="linkedin" type="text"
+                                        class="form-control" id="exampleInputLinkedin">
+                                </div>
+
+                                <button type="submit" class="btn text-white bg_green">Submit</button>
+
+                            </form>
                         </div>
 
                         <div class="profile_information_card" data-aos="fade-up-left" data-aos-duration="1000">
-                            <h5 class="sub_title">Contact Information</h5>
-                            <ul>
-                                <li><span>Phone : </span>01952827301</li>
-                                <li><span>Whatsapp : </span>01985730145</li>
-                                <li><span>Address : </span>Farm Para, Chuadanga</li>
-                                <li><span>Social :</span>
-                                    <ul class="profile_social">
-                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+
+                            <h5 class="sub_title">Email Update</h5>
+                            <form action="#" method="post">
+
+                                 <!-- Email Address -->
+                                 <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Email Address</label>
+                                    <input name="emailpassword" type="text" class="form-control"
+                                        id="exampleInputName">
+                                </div>
+
+                                 <!-- Password -->
+                                 <div class="mb-3">
+                                    <label for="exampleInputAddress" class="form-label">Password</label>
+                                    <input name="password" type="password" class="form-control"
+                                        id="exampleInputAddress">
+                                </div>
+                               
+                                <button type="submit" class="btn text-white bg_green">Submit</button>
+
+                            </form>
                         </div>
+
+                        <div class="profile_information_card" data-aos="fade-up-left" data-aos-duration="1000">
+
+                            <h5 class="sub_title">Password Update</h5>
+                            <form action="#" method="post">
+
+                                 <!-- Current Password -->
+                                 <div class="mb-3">
+                                    <label for="exampleInputAddress" class="form-label">Current Password</label>
+                                    <input name="current_password" type="password" class="form-control"
+                                        id="exampleInputAddress">
+                                </div>
+
+                                 <!-- New Password -->
+                                 <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">New Password</label>
+                                    <input name="new_password" type="password" class="form-control"
+                                        id="exampleInputName">
+                                </div>
+
+                                <!-- Confirm Password -->
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Confirm Password</label>
+                                    <input name="confirm_password" type="password"
+                                        class="form-control" id="exampleInputName">
+                                </div>
+
+                               
+                                <button type="submit" class="btn text-white bg_green">Submit</button>
+
+                            </form>
+                        </div>
+
+                        
                     </div>
+
+                    
                 </div>
             </div>
         </section>

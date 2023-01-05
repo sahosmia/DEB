@@ -1,4 +1,10 @@
 /*
+* Preloader 
+* Header 
+*	> Top Header
+*	> Navbar
+*
+*
 * Common Section
 * Common Class
 * Preloder
@@ -108,7 +114,7 @@ color: #f42a41;
 
 /* Top Header End */
 
-
+/* navbar header start  */
 header nav {
 background: var(--color-white);
 border-bottom: 2px solid #f42a41;
@@ -123,7 +129,6 @@ transition: all linear 0.3s;
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
 color: var(--color-1);
-/* color: rgba(0,0,0,.7); */
 }
 
 .navbar_auth {
@@ -197,6 +202,7 @@ color: #494b4f;
 font-size: 14px;
 font-weight: 500;
 }
+/* navber header end  */
 /*============ Header section end ==============*/
 
 /*============ Banner section Start ==============*/
@@ -240,9 +246,9 @@ display: inline-block;
 margin-bottom: 40px;
 padding-right: 44px;
 }
-/*========= banner section end ===========*/
+/*========= Banner section end ===========*/
 
-/*=========== page banner section start =============*/
+/*=========== Page Banner section start =============*/
 .page_banner {
 position: relative;
 z-index: 1;
@@ -294,7 +300,17 @@ padding-bottom: 20px;
 color: #c5c5c5;
 font-size: 15px;
 }
-/*============ page banner section end =================*/
+
+.page_banner .breadcrumb {
+    justify-content: center;
+}
+.page_banner .breadcrumb-item.active {
+    color: #f42a41;
+}
+.page_banner .breadcrumb-item a{
+	color: #fff;
+}
+/*============ Page Banner section end =================*/
 
 /*=============== registion form setion css start ============*/
 .registaion_form {
@@ -1207,6 +1223,14 @@ margin: 0 auto 12px;
 .profile_social li {
 	display: inline-block;
 	margin: 0 5px;
+}
+
+.profile_image_update {
+    width: 10%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 10px solid #ebebeb;
+    display: block;
 }
 
 /* Profile Page Css End  */
