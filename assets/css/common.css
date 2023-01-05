@@ -69,7 +69,7 @@ h6 {
 
 p {
   margin-bottom: 0;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 img {
@@ -135,12 +135,11 @@ button.button {
 .choose_us,
 .about_us,
 .notice,
-.newsletter,
 .registaion_form_section,
 .registation_course,
 .testimonial,
-.registaion_details_section,
-.gallery {
+.profile_page,
+.registaion_details_section{
   padding: 60px 0;
 }
 /*========== Custom Common Class End ===========*/
