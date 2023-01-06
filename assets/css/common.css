@@ -130,7 +130,7 @@ button.button {
 }
 
 
-.mentor,
+.team,
 .question,
 .choose_us,
 .about_us,
@@ -139,6 +139,7 @@ button.button {
 .registation_course,
 .testimonial,
 .profile_page,
+.blog,
 .registaion_details_section{
   padding: 60px 0;
 }
