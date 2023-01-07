@@ -346,7 +346,7 @@ box-shadow:none; */
 
 
 
-.team, .profile_page, .question, .choose_us, .about_us, .blog, .registaion_form_section, 
+.team, .profile_page, .question, .choose_us, .about_us, .blog, .contact, .registaion_form_section, 
 .registation_course, .testimonial, .registaion_details_section,.gallary{
 padding: 10px 0;
 }
@@ -1402,3 +1402,180 @@ margin: 0 auto 12px;
 }
 
 /* Profile Page Css End  */
+
+/* Contact page start  */
+.contact{
+   background: rgb(245, 245, 245);
+   z-index: -22;
+}
+
+.contact-message h4::after, .contact-list h4::after {
+    position: absolute;
+    content: "";
+    background: red;
+    left: 0px;
+    width: 50px;
+    height: 2px;
+    bottom: -10px;
+}
+
+.contact-message, .contact-list {
+    background: #fff;
+    padding: 40px;
+    padding-top: 35px;
+}
+
+.contact-message h4, .contact-list h4 {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.contact_information_item {
+    overflow: hidden;
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact_information_item .icon {
+
+    overflow: hidden;
+    font-size: 42px;
+    line-height: 1;
+    color: #ed344deb;
+    margin-right: 20px;
+}
+
+.contact_information_item .text {
+    overflow: hidden;
+}
+.contact_information_item .text span {
+    display: block;
+}
+
+.contact-list{
+    margin-bottom: 20px;
+}
+
+/*======================  Shape  =======================*/
+
+/*   contact     */
+
+.contact-shape-group-1 .shape {
+    position: absolute;
+    z-index: -1;
+}
+.contact-shape-group-1 .shape.shape-1 {
+    top: 140px;
+    left: 100px;
+}
+.contact-shape-group-1 .shape.shape-2 {
+    top: 140px;
+    left: 315px;
+}
+
+.contact-shape-group-1 .shape.shape-3 {
+    bottom: 91px;
+    right: 700px;
+}
+
+.contact-shape-group-1 .shape.shape-4 {
+    bottom: 60px;
+    right: 230px;
+}
+.contact-shape-group-1 .shape.shape-5 {
+    top: 7%;
+    left: 15%;
+    animation: contact-shape-5 infinite 30s;
+}
+.contact-shape-group-1 .shape.shape-6 {
+    top: 10%;
+    right: 10%;
+    animation: contact-shape-6 infinite 30s;
+
+}
+
+@keyframes contact-shape-5 {
+    0%   {
+        top: 7%; left: 15%;
+    }
+    25%   {
+        top: 40%; left: 3%;
+    }
+    50%  {
+        top: 50%; left: 3%;
+    }
+    75%  {
+        top: 20%; left: 10%;
+    }
+  }
+
+@keyframes contact-shape-6 {
+    0%   {
+        right:10%; top:10%;
+    }
+
+    50%  {
+        right:-2%; top:90%;
+    }
+    75%  {
+        right:50%; top:50%;
+    }
+  }
+
+
+
+/* Blog  */
+.blog-shape-group-1 .shape {
+    position: absolute;
+    z-index: -1;
+}
+.blog-shape-group-1 .shape.shape-1 {
+    top: 0;
+    left: 0;
+    /* top: 140px;
+    left: 100px; */
+    animation-name: example;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
+.blog-shape-group-1 .shape.shape-2 {
+    top: 140px;
+    left: 315px;
+}
+
+.blog-shape-group-1 .shape.shape-3 {
+    bottom: 80px;
+    right: 0;
+}
+
+.blog-shape-group-1 .shape.shape-4 {
+    bottom: 60px;
+    right: 230px;
+}
+@keyframes example {
+    0%   {
+        left:10%; top:0px;
+    }
+    25%  {
+        left:60%; top:0px;
+    }
+    50%  {
+        left:90%; top:90%;
+    }
+    75%  {
+        left:10%; top:90%;
+    }
+    100% {
+        left:10%; top:0px;
+    }
+  }
