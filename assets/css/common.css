@@ -64,12 +64,18 @@ h6 {
   font-family: var(--font-family-inter);
   margin-bottom: 0;
 }
-
-
+.sticky-navbar {
+  /* background-color: red !important; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+  border-bottom: 1px solid #f42a41;
+}
 
 p {
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 img {

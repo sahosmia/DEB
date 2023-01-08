@@ -3,6 +3,12 @@ setTimeout(function(){
     $('.loader_bg').fadeToggle();
 }, 1500);
 
+// sticky navbar 
+window.addEventListener("scroll", function(){
+    var navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("sticky-navbar", window.scrollY > 51);
+});
+
 // Testimonial Slider =======================
 $(".owl-carousel").owlCarousel({
     autoplay: true,

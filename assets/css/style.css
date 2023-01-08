@@ -117,7 +117,7 @@ color: #f42a41;
 /* navbar header start  */
 header nav {
 background: var(--color-white);
-border-bottom: 2px solid #f42a41;
+/* border-bottom: 2px solid #f42a41; */
 }
 
 .navbar-expand-sm .navbar-nav .nav-link {
@@ -427,20 +427,21 @@ margin: 0 0 35px;
 }
 
 .choose_item i {
-background: #f1f1f1;
-width: 110px;
-height: 60px;
-text-align: center;
-line-height: 60px;
-font-size: 32px;
-border-radius: 5px;
-margin-right: 12px;
+    background: #f42a4121;
+    width: 110px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 22px;
+    border-radius: 5px;
+    margin-right: 12px;
+    color: #f42a41bf;
 }
 
 .choose_item h6 {
     font-weight: 600;
     line-height: 30px;
-    color: #3ea78d;
+    
 }
 .choose_item p {
 font-size: 14px;
