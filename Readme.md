@@ -9,6 +9,15 @@
   - 404 Page add 
   - Bread Cump add
   
+ #### 09-01-23
+  - Blog Page
+  - Blog Details Edit
+  - Gallery Image View 
+  - Counter Up
+  - Counter Up
+  - Modal Background Add 
+
+  
 ## Features 
 
 - Header 
