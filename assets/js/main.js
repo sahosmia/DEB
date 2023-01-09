@@ -54,7 +54,7 @@ $('html, body').animate({scrollTop:0}, '300');
 
 
 
-// Modal 
+// Modal ===================================
 let closeBtn = document.querySelector(".close");
 let modalBox = document.querySelector(".modal_box");
 
@@ -70,3 +70,32 @@ window.addEventListener('load', function(){
         3000
     )
 });
+
+
+
+// counter ===================================
+
+var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('.auto_counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+   let valueDisplays = document.querySelectorAll(".counter");
+let interval = 4000;
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-count"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+    a = 1;
+  }
+
+});
+
