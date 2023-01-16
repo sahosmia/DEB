@@ -99,3 +99,21 @@ valueDisplays.forEach((valueDisplay) => {
 
 });
 
+
+// Gallery View =================================
+var gallaryClose = document.querySelector(".popup-image span");
+document.querySelectorAll(".gallery_item i").forEach(image =>{
+    image.onclick = () => {
+        var img = image.parentNode.previousSibling.previousElementSibling;
+        // var img = eyeParent.previousSibling;
+        document.querySelector(".popup-image").style.display = 'block';
+        document.querySelector(".popup-image img").src = img.getAttribute('src');
+        console.log(eyeParent);
+    }
+});
+
+gallaryClose.addEventListener("click", function(){
+    document.querySelector(".popup-image").style.display = 'none';
+});
+
+
